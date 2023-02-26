@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenShift_Area", "OpenShift_Area\OpenShift_Area.csproj", "{94AD9DA4-573C-400A-9C32-CF167B12AE9F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenShift_Area", "OpenShift_Area\OpenShift_Area.csproj", "{94AD9DA4-573C-400A-9C32-CF167B12AE9F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AreasUtils", "..\OpenShiftUtils\AreasUtils\AreasUtils.csproj", "{60A2BE8A-E01B-4176-BD56-7FB0CB851DBC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{94AD9DA4-573C-400A-9C32-CF167B12AE9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94AD9DA4-573C-400A-9C32-CF167B12AE9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94AD9DA4-573C-400A-9C32-CF167B12AE9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60A2BE8A-E01B-4176-BD56-7FB0CB851DBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60A2BE8A-E01B-4176-BD56-7FB0CB851DBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60A2BE8A-E01B-4176-BD56-7FB0CB851DBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60A2BE8A-E01B-4176-BD56-7FB0CB851DBC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
