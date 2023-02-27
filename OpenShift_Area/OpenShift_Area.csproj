@@ -8,4 +8,8 @@
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\OpenShiftUtils\AreasUtils\AreasUtils.csproj" />
+  </ItemGroup>
+
 </Project>

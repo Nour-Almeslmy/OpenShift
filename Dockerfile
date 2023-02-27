@@ -7,15 +7,15 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
-COPY ["OpenShift_Area/OpenShift_Area.csproj", "OpenShift/OpenShift_Area/"]
-COPY ["../OpenShiftUtils/AreasUtils/AreasUtils.csproj", "OpenShiftUtils/AreasUtils/"]
+COPY ["OpenShift/OpenShift_Area/OpenShift_Area.csproj", "OpenShift/OpenShift_Area/"]
+COPY ["OpenShiftUtils/AreasUtils/AreasUtils.csproj", "OpenShiftUtils/AreasUtils/"]
 RUN dotnet restore "OpenShift/OpenShift_Area/OpenShift_Area.csproj"
 COPY . .
-WORKDIR "/src/OpenShift_Area"
-RUN dotnet build "OpenShift_Area.csproj" -c Release -o /app/build
+WORKDIR "/src/OpenShift"
+RUN dotnet build "OpenShift_Area/OpenShift_Area.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "OpenShift_Area.csproj" -c Release -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "OpenShift_Area/OpenShift_Area.csproj" -c Release -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
