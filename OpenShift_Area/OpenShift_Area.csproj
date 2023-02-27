@@ -4,10 +4,8 @@
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>4bca6663-88cf-4c6d-909e-4c4cb575f21a</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
   </PropertyGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\..\OpenShiftUtils\AreasUtils\AreasUtils.csproj" />
-  </ItemGroup>
 
 </Project>

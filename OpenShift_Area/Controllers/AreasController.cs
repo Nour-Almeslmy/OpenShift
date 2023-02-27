@@ -1,5 +1,4 @@
-﻿using AreasUtils;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 
 namespace OpenShift_Area.Controllers
 {
@@ -10,8 +9,7 @@ namespace OpenShift_Area.Controllers
         [HttpGet]
         public string GetPerimeter()
         {
-            var dims = new AerasDims(3,5);
-            return dims.perimeter.ToString();
+            return "Perimeter";
         }
 
     }
